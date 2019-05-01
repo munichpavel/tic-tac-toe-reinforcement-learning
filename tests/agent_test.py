@@ -24,8 +24,8 @@
 # ----------------------------------------------------------------------
 
 import unittest
-from agent import *
-from game import *
+from tic_tac_toe.agent import WinBlockingRandomAgent
+from tic_tac_toe.game import VALUES
 
 
 class AgentTest(unittest.TestCase):

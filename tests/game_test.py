@@ -24,7 +24,10 @@
 # ----------------------------------------------------------------------
 
 import unittest
-from agent import *
+from tic_tac_toe.agent import DummyAgent
+from tic_tac_toe.game import Game
+from tic_tac_toe.globals import VALUES
+from copy import deepcopy
 
 
 class GameTest(unittest.TestCase):

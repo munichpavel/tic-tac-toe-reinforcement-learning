@@ -30,6 +30,9 @@ import random
 import pickle
 import csv
 from .game import Game
+from .globals import VALUES
+
+import logging
 
 
 class Agent(object):
@@ -326,7 +329,7 @@ class BaseQAgent(Agent):
             self.log('exploitation move: {0}'.format(str(action)))
         return action
 
-    def q_value(self, (state, action)):
+    def q_value(self, state_action):
         """ The Q-value Q(s,a) for a state, action pair
 
         For a given state, action pair (s, a) it returns the current Q-value Q(s,a) if exists,
@@ -334,6 +337,7 @@ class BaseQAgent(Agent):
         :param state, action:
         :return: q_value
         """
+        state, action = state_action
         hashable_state = self.represent_state(state)
         if not (hashable_state, action) in self.q_values:
             self.q_values[hashable_state, action] = self.reward(Game.game_state(state))

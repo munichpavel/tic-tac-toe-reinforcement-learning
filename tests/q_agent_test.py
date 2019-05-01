@@ -24,8 +24,8 @@
 # ----------------------------------------------------------------------
 
 import unittest
-from agent import *
-from game import *
+from tic_tac_toe.agent import QLearningAgent
+from tic_tac_toe.globals import VALUES
 
 
 class QAgentTest(unittest.TestCase):
