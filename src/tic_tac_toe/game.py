@@ -41,7 +41,7 @@ Actions are represented by coordinate tuples i, j.
 
 import logging
 from copy import deepcopy
-from globals import *
+from .globals import *
 
 
 class Game(object):
@@ -160,9 +160,3 @@ class Game(object):
     def log(self, s):
         if self.verbose:
             self.logger.debug(s)
-
-
-
-
-
-

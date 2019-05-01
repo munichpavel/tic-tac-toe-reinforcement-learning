@@ -45,8 +45,12 @@ Indices for cells(actions) are:
 """
 
 import matplotlib.pyplot as plt
-from agent import *
-from experiments import calculate_winner_frequency_dict
+import random
+import logging
+import pickle
+from .agent import HumanAgent, RandomAgent, WinBlockingRandomAgent, SarsaAgent, QLearningAgent
+from .game import Game
+from .experiments import calculate_winner_frequency_dict
 
 
 _LOGGER = logging.getLogger(__name__)

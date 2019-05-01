@@ -29,7 +29,7 @@ import abc
 import random
 import pickle
 import csv
-from game import *
+from .game import Game
 
 
 class Agent(object):

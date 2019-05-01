@@ -25,7 +25,7 @@
 
 """This file contains methods for running experiments between agents and plotting their performance."""
 
-from agent import *
+from .agent import *
 import matplotlib.pyplot as plt
 from math import sqrt
 
