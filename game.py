@@ -155,7 +155,7 @@ class Game(object):
         for i in range(3):
             for j in range(3):
                 cells.append(board[i][j].center(6))
-        print BOARD.format(*cells)
+        print(BOARD.format(*cells))
 
     def log(self, s):
         if self.verbose:

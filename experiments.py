@@ -199,7 +199,7 @@ if __name__ == '__main__':
 
     episode_counts = range(num_episodes)
     for i in range(num_episodes):
-            print 'Episode: {0}'.format(i)
+            print('Episode: {0}'.format(i))
             epsilon_x = 0.1 if i < 350 else 0.1 / sqrt(i/100)
             rewards = calculate_average_reward(agent1=player_x,
                                                agent2=player_o,
