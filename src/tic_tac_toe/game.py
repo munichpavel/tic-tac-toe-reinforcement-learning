@@ -41,7 +41,7 @@ Actions are represented by coordinate tuples i, j.
 
 import logging
 from copy import deepcopy
-from .globals import *
+from .globals import VALUES, BOARD, AgentActionError
 
 
 class Game(object):
