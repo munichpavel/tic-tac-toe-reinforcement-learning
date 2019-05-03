@@ -43,8 +43,6 @@ setup(
 
         'License :: OSI Approved :: MIT License',
 
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
@@ -54,7 +52,7 @@ setup(
 
     packages=find_packages(include=['src'], exclude=['contrib', 'docs', 'tests']),  # Required
 
-    python_requires='>=3.6',
+    python_requires='>=3.*',
 
     install_requires=['matplotlib', 'pandas', 'pytest'],  # Optional
 

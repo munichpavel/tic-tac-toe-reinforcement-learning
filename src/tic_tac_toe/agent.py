@@ -240,7 +240,7 @@ class HumanAgent(Agent):
         action = None
         while not_allowed and error_trial < 3:
             error_trial += 1
-            raw_action_input = raw_input('Your move? ').split(',')
+            raw_action_input = input('Your move? ').split(',')
             action = int(raw_action_input[0]), int(raw_action_input[1])
             check_state = state[action[0]][action[1]]
             if check_state == VALUES.EMPTY:
